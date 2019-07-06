@@ -10,7 +10,7 @@ phases:
       - npm install
   build:
     commands:
-      - npm run build
+      - REACT_APP_HOGE=env_is_working npm run build
   post_build:
     commands:
       - tar cf /tmp/node_modules.tar node_modules
